@@ -9,7 +9,7 @@ const genderContainer = document.getElementById("genderContainer");
 const termsInput = document.getElementById("terms");
 const termsError = document.getElementById("termsError");
 
-const data = [];
+let data = JSON.parse(localStorage.getItem("userInfo") || "[]");
 
 function addPhoneNumber() {
   const div = document.createElement("div");
