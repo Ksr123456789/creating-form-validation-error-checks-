@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .error {
+        color: rgb(242, 33, 33);
+      }
+      .error-border {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>form</h1>
+    <form id="form-validation">
+      <div>
+        <label for="name">name</label>
+        <input type="text" id="name" />
+        <small class="error"></small>
+      </div>
+      <div>
+        <label for="email">email</label>
+        <input type="email" id="email" />
+        <small class="error"></small>
+      </div>
+      <div>
+        <label for="password">password</label>
+        <input type="password" id="password" />
+        <small class="error"></small>
+      </div>
+      <div>
+        <label for="age">age</label>
+        <input type="age" id="age" />
+        <small class="error"></small>
+      </div>
+      <div id="genderContainer">
+        <label for="gender">gender</label>
+        <input type="radio" name="gender" value="male" />male
+        <input type="radio" name="gender" value="female" />female
+        <input type="radio" name="gender" value="other" />other
+        <small id="genderError"></small>
+      </div>
+      <div>
+        <label>phone Numbers</label>
+        <div id="phoneContainer"></div>
+        <button type="button" id="addPhoneBtn">Add Phone no.</button>
+        <small class="error" id="PhoneError"></small>
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" id="terms" />
+          I agree to the terms & conditions
+        </label>
+        <small id="termsError" class="error"></small>
+      </div>
+
+      <button type="submit">submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
